@@ -17,24 +17,15 @@ export const NavItem = ({ children, href, icon, ...rest }: NavItemProps) => {
           p="4"
           mx="4"
           borderRadius="lg"
-          role="group"
           cursor="pointer"
+          transition="background-color"
+          transitionDuration="300ms"
           _hover={{
-            bg: 'cyan.400',
-            color: 'white',
+            bg: 'gray.100',
           }}
           {...rest}
         >
-          {icon && (
-            <Icon
-              mr="4"
-              fontSize="16"
-              _groupHover={{
-                color: 'white',
-              }}
-              as={icon}
-            />
-          )}
+          {icon && <Icon mr="4" fontSize="16" as={icon} />}
           {children}
         </Flex>
       </Link>
