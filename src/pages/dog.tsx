@@ -2,8 +2,8 @@ import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
-    <div className="max-w-7xl mx-auto">
-      <h1 className="text-2xl text-gray-600 py-4">Welcome to Dog!</h1>
+    <div className="mx-auto max-w-7xl">
+      <h1 className="py-4 text-2xl font-bold text-black">Welcome to Dog!</h1>
     </div>
   );
 };
