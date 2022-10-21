@@ -4,11 +4,7 @@
 
 ### [Tailwind CSS](https://tailwindcss.com)
 
-### [Headless UI](https://headlessui.com)
-
-- [Documentation](https://github.com/tailwindlabs/headlessui/tree/main/packages/@headlessui-tailwindcss#documentation)
-
-### [Heroicons](https://heroicons.com)
+### [Chakra UI](https://chakra-ui.com)
 
 ## References
 
