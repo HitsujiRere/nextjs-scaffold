@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 const Home: NextPage = () => {
   return (
     <div className="max-w-7xl mx-auto">
-      <h1 className="text-2xl text-gray-600 py-4">Welcome to Next.js!</h1>
+      <h1 className="text-2xl text-gray-600 py-4">Welcome to Cat!</h1>
     </div>
   );
 };
