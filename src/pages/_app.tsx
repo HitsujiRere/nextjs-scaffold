@@ -1,15 +1,14 @@
 import '@/styles/globals.css';
 
-import type { AppProps } from 'next/app';
+import { ChakraProvider } from '@chakra-ui/react';
+import type { AppPropsWithLayout } from 'next/app';
 
-import { DefaultLayout } from '@/components/components/layout/Default';
+import { AppLayout } from '@/components/layout/AppLayout';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <DefaultLayout>
-      <Component {...pageProps} />
-    </DefaultLayout>
-  );
+function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+  const getLayout = Component.getLayout ?? ((page) => <AppLayout>{page}</AppLayout>);
+
+  return <ChakraProvider>{getLayout(<Component {...pageProps} />)}</ChakraProvider>;
 }
 
 export default MyApp;

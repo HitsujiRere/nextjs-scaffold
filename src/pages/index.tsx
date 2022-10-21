@@ -1,7 +1,9 @@
-import type { NextPage } from 'next';
+import type { NextPageWithLayout } from 'next';
 import { useRouter } from 'next/router';
 
-const Home: NextPage = () => {
+import { TopLayout } from '@/components/layout/TopLayout';
+
+const Home: NextPageWithLayout = () => {
   const router = useRouter();
 
   return (
@@ -17,3 +19,5 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+Home.getLayout = (page) => <TopLayout>{page}</TopLayout>;

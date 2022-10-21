@@ -11,18 +11,21 @@ export const Header = () => {
             </Link>
           </div>
           <div className="flex items-center gap-10">
-            <Link href="/dog">
+            <Link href="/app">
+              <a className="font-medium  text-gray-600">Application</a>
+            </Link>
+            <Link href="/app/dog">
               <a className="font-medium  text-gray-600">Dog</a>
             </Link>
-            <Link href="/cat">
+            <Link href="/app/cat">
               <a className="font-medium  text-gray-600">Cat</a>
             </Link>
           </div>
           <div className="flex items-center gap-10">
-            <Link href="/">
+            <Link href="/app">
               <a className="font-medium  text-gray-600">Sign in</a>
             </Link>
-            <Link href="/">
+            <Link href="/app">
               <a className="rounded-md bg-indigo-600 px-4 py-2 font-medium text-white shadow-sm hover:bg-indigo-700">
                 Sign up
               </a>
