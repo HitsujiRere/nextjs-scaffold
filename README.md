@@ -1,10 +1,14 @@
 # Next.js Scaffold
 
-## Using Libraries
+## Using packages
 
-### [Tailwind CSS](https://tailwindcss.com)
+### Framework: [Next.js](https://nextjs.org)
 
-### [Chakra UI](https://chakra-ui.com)
+### UI Library: [React](https://ja.reactjs.org)
+
+### UI Components: [Chakra UI](https://chakra-ui.com)
+
+### CSS Utils: [Tailwind CSS](https://tailwindcss.com)
 
 ## References
 
