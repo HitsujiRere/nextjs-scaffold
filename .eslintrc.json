@@ -19,7 +19,7 @@
     "no-restricted-imports": [
       "error",
       {
-        "patterns": ["@/components/features/*/*"]
+        "patterns": ["@/features/*/*", "@/components/*/*/*"]
       }
     ]
   },

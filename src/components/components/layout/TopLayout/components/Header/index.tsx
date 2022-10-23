@@ -18,7 +18,7 @@ export const Header = () => {
               <a className="font-medium  text-gray-600">Form</a>
             </Link>
             <Link href="/app/sine-cat">
-              <a className="font-medium  text-gray-600">Sin wave cat</a>
+              <a className="font-medium  text-gray-600">Sin Cat</a>
             </Link>
           </div>
           <div className="flex items-center gap-10">

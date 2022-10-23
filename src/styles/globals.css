@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @import '~antd/es/style/themes/default.css'; */
+@import '~antd/dist/antd.css';
