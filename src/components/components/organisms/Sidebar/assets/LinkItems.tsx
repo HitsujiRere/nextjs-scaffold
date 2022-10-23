@@ -1,5 +1,5 @@
 import { IconType } from 'react-icons';
-import { FiCompass, FiHome, FiTrendingUp } from 'react-icons/fi';
+import { MdDynamicForm, MdHome, MdWaves } from 'react-icons/md';
 
 interface LinkItemProps {
   name: string;
@@ -8,7 +8,7 @@ interface LinkItemProps {
 }
 
 export const LinkItems: LinkItemProps[] = [
-  { name: 'Home', href: '/app', icon: FiHome },
-  { name: 'Dog', href: '/app/dog', icon: FiTrendingUp },
-  { name: 'Cat', href: '/app/cat', icon: FiCompass },
+  { name: 'Home', href: '/app', icon: MdHome },
+  { name: 'Sine wave cat', href: '/app/sine-cat', icon: MdWaves },
+  { name: 'Form', href: '/app/form', icon: MdDynamicForm },
 ];

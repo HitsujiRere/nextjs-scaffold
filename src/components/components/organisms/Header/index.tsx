@@ -14,11 +14,11 @@ export const Header = () => {
             <Link href="/app">
               <a className="font-medium  text-gray-600">Application</a>
             </Link>
-            <Link href="/app/dog">
-              <a className="font-medium  text-gray-600">Dog</a>
+            <Link href="/app/form">
+              <a className="font-medium  text-gray-600">Form</a>
             </Link>
-            <Link href="/app/cat">
-              <a className="font-medium  text-gray-600">Cat</a>
+            <Link href="/app/sine-cat">
+              <a className="font-medium  text-gray-600">Sin wave cat</a>
             </Link>
           </div>
           <div className="flex items-center gap-10">
