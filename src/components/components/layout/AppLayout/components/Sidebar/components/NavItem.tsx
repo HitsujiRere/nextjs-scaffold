@@ -2,33 +2,38 @@ import { Flex, FlexProps, Icon, Link } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { IconType } from 'react-icons';
 
-interface NavItemProps extends FlexProps {
-  children: string;
-  href: string;
+export interface NavItemProps extends FlexProps {
+  href?: string;
   icon?: IconType;
+  label: string;
 }
 
-export const NavItem = ({ children, href, icon, ...rest }: NavItemProps) => {
-  return (
-    <NextLink href={href}>
-      <Link style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
-        <Flex
-          align="center"
-          p="4"
-          mx="4"
-          borderRadius="lg"
-          cursor="pointer"
-          transition="background-color"
-          transitionDuration="300ms"
-          _hover={{
-            bg: 'gray.100',
-          }}
-          {...rest}
-        >
-          {icon && <Icon mr="4" fontSize="16" as={icon} />}
-          {children}
-        </Flex>
-      </Link>
-    </NextLink>
+export const NavItem = ({ href, icon, label, ...rest }: NavItemProps) => {
+  const inner = (
+    <Flex
+      align="center"
+      p="4"
+      cursor="pointer"
+      transition="color"
+      transitionDuration="300ms"
+      color="gray.600"
+      _hover={{
+        color: 'blue.400',
+      }}
+      {...rest}
+    >
+      {icon && <Icon mr="4" fontSize="16" as={icon} />}
+      {label}
+    </Flex>
   );
+
+  if (href) {
+    return (
+      <NextLink href={href} passHref>
+        <Link style={{ textDecoration: 'none' }}>{inner}</Link>
+      </NextLink>
+    );
+  }
+
+  return inner;
 };

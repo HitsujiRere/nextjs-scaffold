@@ -2,7 +2,7 @@ import { Box, BoxProps, CloseButton, Flex, Link, Text } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 import { MenuItems } from '../assets/MenuItems';
-import { NavItem } from './NavItem';
+import { NavList } from './NavList';
 
 interface SidebarProps extends BoxProps {
   onClose: () => void;
@@ -13,7 +13,7 @@ export const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
     <Box
       bg="white"
       borderRight="1px"
-      borderRightColor="gray.200"
+      borderRightColor="gray.300"
       w={{ base: 'full', md: 60 }}
       h="100vh"
       {...rest}
@@ -29,11 +29,7 @@ export const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
 
-      {MenuItems.map((link) => (
-        <NavItem key={link.name} href={link.href} icon={link.icon}>
-          {link.name}
-        </NavItem>
-      ))}
+      <NavList items={MenuItems} />
     </Box>
   );
 };
