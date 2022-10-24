@@ -19,7 +19,6 @@ export const MenuItems: MenuItemProps[] = [
     children: [
       { key: 'nav2-1', label: 'Sub 1' },
       { key: 'nav2-2', label: 'Sub 2' },
-      { children: [{ key: 'nav2-3-1', label: 'Sub 3-1' }], key: 'nav2-3', label: 'Sub 3' },
     ],
     key: 'nav2',
     label: 'Nav 2',

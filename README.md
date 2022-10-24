@@ -8,13 +8,15 @@
 
 ### UI Components: [Chakra UI](https://chakra-ui.com)
 
-### CSS Utils: [Tailwind CSS](https://tailwindcss.com)
+- [Chakra Templates](https://chakra-templates.dev)
+
+### CSS Utils: [Emotion](https://emotion.sh/)
+
+- Sub: [Tailwind CSS](https://tailwindcss.com)
+
+  - [Tailwind UI](https://tailwindui.com/)
 
 ## References
-
-### [Chakra Templates](https://chakra-templates.dev)
-
-### [Tailwind UI](https://tailwindui.com/)
 
 ### [Bulletproof React](https://github.com/alan2207/bulletproof-react)
 

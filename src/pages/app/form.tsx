@@ -4,6 +4,7 @@ import {
   FormErrorMessage,
   FormHelperText,
   FormLabel,
+  Heading,
   Input,
   Stack,
   VStack,
@@ -33,7 +34,9 @@ const Home: NextPage = () => {
 
   return (
     <VStack align="start">
-      <h1 className="py-4 text-2xl font-bold text-black">Welcome to Form using React-Hook-Form!</h1>
+      <Heading as="h1" py="4" fontSize="2xl" fontWeight="bold">
+        Welcome to Form using React-Hook-Form!
+      </Heading>
 
       <Stack as="form" onSubmit={handleSubmit(onSubmit)} width="full">
         <FormControl isInvalid={!!errors.email}>

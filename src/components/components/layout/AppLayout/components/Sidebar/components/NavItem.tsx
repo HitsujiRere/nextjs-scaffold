@@ -1,6 +1,7 @@
-import { Flex, FlexProps, Icon, Link } from '@chakra-ui/react';
-import NextLink from 'next/link';
+import { Flex, FlexProps, Icon } from '@chakra-ui/react';
 import { IconType } from 'react-icons';
+
+import { Link } from '@/components/atoms/Link';
 
 export interface NavItemProps extends FlexProps {
   href?: string;
@@ -28,11 +29,7 @@ export const NavItem = ({ href, icon, label, ...rest }: NavItemProps) => {
   );
 
   if (href) {
-    return (
-      <NextLink href={href} passHref>
-        <Link style={{ textDecoration: 'none' }}>{inner}</Link>
-      </NextLink>
-    );
+    return <Link href={href}>{inner}</Link>;
   }
 
   return inner;

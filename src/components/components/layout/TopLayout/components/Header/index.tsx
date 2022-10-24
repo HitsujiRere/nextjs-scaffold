@@ -1,38 +1,95 @@
-import Link from 'next/link';
+import {
+  Box,
+  Container,
+  Flex,
+  Popover,
+  PopoverBody,
+  PopoverContent,
+  PopoverTrigger,
+  VStack,
+} from '@chakra-ui/react';
+
+import { Link } from '@/components/atoms/Link';
 
 export const Header = () => {
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl border-b-2 border-gray-100 px-4 py-6">
-        <div className="flex items-center justify-between">
-          <div>
-            <Link href="/">
-              <a className="text-xl font-bold text-gray-600">Next.js</a>
+    <Box bg="white">
+      <Container maxW="7xl" borderBottom="2px" borderBottomColor="gray.200" px="4" py="6">
+        <Flex justify="space-between" alignItems="center">
+          <Box>
+            <Link href="/" fontSize="xl" fontWeight="medium" textColor="gray.600">
+              Application
             </Link>
-          </div>
-          <div className="flex items-center gap-10">
-            <Link href="/app">
-              <a className="font-medium  text-gray-600">Application</a>
+          </Box>
+          <Flex columnGap="10" alignItems="center">
+            <Popover trigger="hover" placement="bottom-start">
+              <PopoverTrigger>
+                <Box>
+                  <Link href="/app" fontWeight="medium" textColor="gray.600">
+                    Application
+                  </Link>
+                </Box>
+              </PopoverTrigger>
+              <PopoverContent>
+                <PopoverBody>
+                  <VStack align="stretch">
+                    <Link href="/app/form">
+                      <Box
+                        p="4"
+                        borderRadius="lg"
+                        cursor="pointer"
+                        _hover={{
+                          bg: 'green.50',
+                        }}
+                      >
+                        Form
+                      </Box>
+                    </Link>
+                    <Link href="/app/sine-cat">
+                      <Box
+                        p="4"
+                        borderRadius="lg"
+                        cursor="pointer"
+                        _hover={{
+                          bg: 'green.50',
+                        }}
+                      >
+                        Sine cat wave
+                      </Box>
+                    </Link>
+                  </VStack>
+                </PopoverBody>
+              </PopoverContent>
+            </Popover>
+            <Link href="/app/form" fontWeight="medium" textColor="gray.600">
+              Form
             </Link>
-            <Link href="/app/form">
-              <a className="font-medium  text-gray-600">Form</a>
+            <Link href="/app/sine-cat" fontWeight="medium" textColor="gray.600">
+              Sine cat wave
             </Link>
-            <Link href="/app/sine-cat">
-              <a className="font-medium  text-gray-600">Sin wave cat</a>
+          </Flex>
+          <Flex columnGap="10" alignItems="center">
+            <Link href="/app" fontWeight="medium" textColor="gray.600">
+              Sign in
             </Link>
-          </div>
-          <div className="flex items-center gap-10">
-            <Link href="/app">
-              <a className="font-medium  text-gray-600">Sign in</a>
+            <Link
+              href="/app"
+              rounded="md"
+              bg="blue.600"
+              px="4"
+              py="2"
+              fontWeight="medium"
+              textColor="white"
+              shadow="sm"
+              _hover={{
+                bg: 'blue.500',
+              }}
+            >
+              Sign up
             </Link>
-            <Link href="/app">
-              <a className="rounded-md bg-indigo-600 px-4 py-2 font-medium text-white shadow-sm hover:bg-indigo-700">
-                Sign up
-              </a>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Flex>
+        </Flex>
+      </Container>
+    </Box>
   );
 };
