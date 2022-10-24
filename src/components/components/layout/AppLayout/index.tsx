@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { Sidebar } from '@/components/organisms/Sidebar';
+import { Sidebar } from './components/Sidebar';
 
 export const AppLayout = ({ children }: { children: ReactNode }) => {
   return (

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Header } from '@/components/organisms/Header';
+import { Header } from './components/Header';
 
 export const TopLayout = ({ children }: { children: ReactNode }) => {
   return (

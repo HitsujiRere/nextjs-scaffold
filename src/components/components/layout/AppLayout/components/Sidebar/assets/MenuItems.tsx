@@ -1,13 +1,13 @@
 import { IconType } from 'react-icons';
 import { MdDynamicForm, MdHome, MdWaves } from 'react-icons/md';
 
-interface LinkItemProps {
+export interface MenuItemProps {
   name: string;
   href: string;
-  icon: IconType;
+  icon?: IconType;
 }
 
-export const LinkItems: LinkItemProps[] = [
+export const MenuItems: MenuItemProps[] = [
   { name: 'Home', href: '/app', icon: MdHome },
   { name: 'Sine wave cat', href: '/app/sine-cat', icon: MdWaves },
   { name: 'Form', href: '/app/form', icon: MdDynamicForm },
