@@ -10,7 +10,7 @@ export interface LinkProps extends Omit<ChakraLinkProps, 'href'> {
 
 export const Link = ({ children, href, ...props }: LinkProps) => {
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref legacyBehavior>
       <ChakraLink {...props} style={{ textDecoration: 'none' }}>
         {children}
       </ChakraLink>
