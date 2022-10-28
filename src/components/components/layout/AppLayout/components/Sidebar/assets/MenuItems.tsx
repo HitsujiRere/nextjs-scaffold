@@ -11,9 +11,9 @@ export interface MenuItemProps extends Omit<FlexProps, 'children'> {
 }
 
 export const MenuItems: MenuItemProps[] = [
-  { href: '/app', icon: MdHome, key: 'home', label: 'Home' },
-  { href: '/app/sine-cat', icon: MdWaves, key: 'sine-cat', label: 'Sine wave cat' },
-  { href: '/app/form', icon: MdDynamicForm, key: 'form', label: 'Form' },
+  { href: '/nextjs', icon: MdHome, key: 'home', label: 'Home' },
+  { href: '/nextjs/sine-cat', icon: MdWaves, key: 'sine-cat', label: 'Sine wave cat' },
+  { href: '/nextjs/form', icon: MdDynamicForm, key: 'form', label: 'Form' },
   { key: 'nav1', label: 'Nav 1' },
   {
     children: [

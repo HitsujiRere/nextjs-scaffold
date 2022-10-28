@@ -20,7 +20,7 @@ export const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Link href="/app" _focus={{ boxShadow: 'none' }}>
+        <Link href="/nextjs" _focus={{ boxShadow: 'none' }}>
           <Text fontSize="2xl" fontWeight="bold">
             Logo
           </Text>

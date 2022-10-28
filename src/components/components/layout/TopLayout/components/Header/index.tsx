@@ -25,7 +25,7 @@ export const Header = () => {
             <Popover trigger="hover" placement="bottom-start">
               <PopoverTrigger>
                 <Box>
-                  <Link href="/app" fontWeight="medium" textColor="gray.600">
+                  <Link href="/nextjs" fontWeight="medium" textColor="gray.600">
                     Application
                   </Link>
                 </Box>
@@ -33,7 +33,7 @@ export const Header = () => {
               <PopoverContent>
                 <PopoverBody>
                   <VStack align="stretch">
-                    <Link href="/app/form">
+                    <Link href="/nextjs/form">
                       <Box
                         p="4"
                         borderRadius="lg"
@@ -45,7 +45,7 @@ export const Header = () => {
                         Form
                       </Box>
                     </Link>
-                    <Link href="/app/sine-cat">
+                    <Link href="/nextjs/sine-cat">
                       <Box
                         p="4"
                         borderRadius="lg"
@@ -61,19 +61,19 @@ export const Header = () => {
                 </PopoverBody>
               </PopoverContent>
             </Popover>
-            <Link href="/app/form" fontWeight="medium" textColor="gray.600">
+            <Link href="/nextjs/form" fontWeight="medium" textColor="gray.600">
               Form
             </Link>
-            <Link href="/app/sine-cat" fontWeight="medium" textColor="gray.600">
+            <Link href="/nextjs/sine-cat" fontWeight="medium" textColor="gray.600">
               Sine cat wave
             </Link>
           </Flex>
           <Flex columnGap="10" alignItems="center">
-            <Link href="/app" fontWeight="medium" textColor="gray.600">
+            <Link href="/nextjs" fontWeight="medium" textColor="gray.600">
               Sign in
             </Link>
             <Link
-              href="/app"
+              href="/nextjs"
               rounded="md"
               bg="blue.600"
               px="4"

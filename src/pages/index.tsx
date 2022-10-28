@@ -1,7 +1,4 @@
-import {
-  Container,
-  Heading,
-} from '@chakra-ui/react';
+import { Container, Heading } from '@chakra-ui/react';
 import type { NextPageWithLayout } from 'next';
 import { useRouter } from 'next/router';
 
