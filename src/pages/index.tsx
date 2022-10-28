@@ -1,12 +1,9 @@
 import { Container, Heading } from '@chakra-ui/react';
 import type { NextPageWithLayout } from 'next';
-import { useRouter } from 'next/router';
 
 import { TopLayout } from '@/components/layout/TopLayout';
 
 const Home: NextPageWithLayout = () => {
-  const router = useRouter();
-
   return (
     <Container maxW="7xl">
       <Heading as="h1" py="4" fontSize="2xl" fontWeight="bold">
