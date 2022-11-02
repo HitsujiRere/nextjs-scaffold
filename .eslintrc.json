@@ -21,7 +21,8 @@
       {
         "patterns": ["@/features/*/*", "@/components/*/*/*"]
       }
-    ]
+    ],
+    "@next/next/no-head-element": "off"
   },
   "settings": {
     "tailwindcss": {
