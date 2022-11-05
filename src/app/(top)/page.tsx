@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Home = () => {
+export default function TopPage() {
   return (
     <article className="prose max-w-full break-words">
       <h1>h1: Welcome to Next.js!</h1>
@@ -30,6 +30,4 @@ const Home = () => {
       </ol>
     </article>
   );
-};
-
-export default Home;
+}

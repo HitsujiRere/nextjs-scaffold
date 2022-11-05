@@ -1,4 +1,4 @@
-const Home = () => {
+export default function TopCatPage() {
   return (
     <div className="max-w-7xl mx-auto">
       <article className="prose">
@@ -7,6 +7,4 @@ const Home = () => {
       </article>
     </div>
   );
-};
-
-export default Home;
+}

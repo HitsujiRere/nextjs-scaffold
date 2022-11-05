@@ -1,6 +1,6 @@
 import { Header } from './header';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function TopLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Header />
