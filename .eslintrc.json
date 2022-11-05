@@ -22,7 +22,8 @@
         "patterns": ["@/features/*/*", "@/components/*/*/*"]
       }
     ],
-    "@next/next/no-head-element": "off"
+    "@next/next/no-head-element": "off",
+    "import/no-anonymous-default-export": "off"
   },
   "settings": {
     "tailwindcss": {
