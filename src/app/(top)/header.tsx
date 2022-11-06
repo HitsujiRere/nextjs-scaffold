@@ -28,6 +28,9 @@ export const Header = () => {
                 <li>
                   <Link href="/form/zod">With Zod</Link>
                 </li>
+                <li>
+                  <Link href="/form/examples">Examples</Link>
+                </li>
               </ul>
             </li>
 

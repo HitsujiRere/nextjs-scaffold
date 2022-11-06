@@ -34,8 +34,8 @@ export default function TopFormPage() {
             </label>
             <input
               {...register('name', { required: '入力してください' })}
-              disabled={isSubmitting}
               type="text"
+              disabled={isSubmitting}
               className="input input-bordered w-full"
             />
             {errors.name && (
@@ -54,6 +54,7 @@ export default function TopFormPage() {
                 min: { message: '0以上を入力してください', value: 0 },
                 required: '入力してください',
               })}
+              type="number"
               disabled={isSubmitting}
               className="input input-bordered w-full"
             />
