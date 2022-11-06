@@ -15,6 +15,11 @@ export const Header = () => {
             <li>
               <Link href="/cat">Cat</Link>
             </li>
+
+            <li>
+              <Link href="/form">Form</Link>
+            </li>
+
             <li tabIndex={0}>
               <Link href="/">
                 Parent
@@ -28,9 +33,6 @@ export const Header = () => {
                   <Link href="/">Submenu 2</Link>
                 </li>
               </ul>
-            </li>
-            <li>
-              <Link href="/">Item 3</Link>
             </li>
           </ul>
         </div>
