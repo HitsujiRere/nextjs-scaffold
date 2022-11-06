@@ -6,15 +6,13 @@
 
 ### UI Library: [React](https://ja.reactjs.org)
 
-### UI Components: [Chakra UI](https://chakra-ui.com)
+### UI Components: [daisyUI](https://daisyui.com)
 
-- [Chakra Templates](https://chakra-templates.dev)
+### CSS Utils: [Tailwind CSS](https://tailwindcss.com)
 
-### CSS Utils: [Emotion](https://emotion.sh/)
+- [Tailwind UI](https://tailwindui.com/)
 
-- Sub: [Tailwind CSS](https://tailwindcss.com)
-
-  - [Tailwind UI](https://tailwindui.com/)
+### Icons: [React Icons](https://react-icons.github.io/react-icons/)
 
 ## References
 
