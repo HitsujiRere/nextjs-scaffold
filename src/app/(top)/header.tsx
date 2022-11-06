@@ -6,7 +6,7 @@ export const Header = () => {
     <header className="sticky top-0 bg-base-200">
       <div className="navbar p-2 justify-between max-w-6xl mx-auto">
         <div>
-          <Link href="/" className="text-xl font-bold p-2">
+          <Link href="/" className="btn btn-ghost normal-case text-xl">
             Next.js
           </Link>
         </div>
@@ -16,8 +16,19 @@ export const Header = () => {
               <Link href="/cat">Cat</Link>
             </li>
 
-            <li>
-              <Link href="/form">Form</Link>
+            <li tabIndex={0}>
+              <Link href="/form">
+                Form
+                <MdExpandMore />
+              </Link>
+              <ul className="p-2 bg-base-200 shadow-xl">
+                <li>
+                  <Link href="/form">React Hook Form</Link>
+                </li>
+                <li>
+                  <Link href="/form/zod">With Zod</Link>
+                </li>
+              </ul>
             </li>
 
             <li tabIndex={0}>
