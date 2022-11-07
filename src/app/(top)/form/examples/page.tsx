@@ -1,5 +1,6 @@
 'use client';
 
+import classNames from 'classnames';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 type Input = {
@@ -62,7 +63,7 @@ export default function TopFormPage() {
           {/* Submit Button */}
           <button
             type="submit"
-            className={'btn w-full max-w-xs mx-auto ' + (isSubmitting && 'loading ')}
+            className={classNames('btn w-full max-w-xs mx-auto', { loading: isSubmitting })}
           >
             送信
           </button>
