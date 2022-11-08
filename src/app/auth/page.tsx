@@ -1,6 +1,7 @@
 'use client';
 
 import { signIn, signOut, useSession } from 'next-auth/react';
+import { FaGoogle } from 'react-icons/fa';
 
 export default function AuthPage() {
   const { data: session } = useSession();
@@ -20,9 +21,14 @@ export default function AuthPage() {
   return (
     <div>
       <p>Not signed in</p>
-      <button className="btn" onClick={() => signIn()}>
-        Sign in
-      </button>
+      <div className="input-group">
+        <span>
+          <FaGoogle />
+        </span>
+        <button className="btn gap-2" onClick={() => signIn('google')}>
+          Sign in with Google
+        </button>
+      </div>
     </div>
   );
 }
