@@ -34,19 +34,8 @@ export const Header = () => {
               </ul>
             </li>
 
-            <li tabIndex={0}>
-              <Link href="/">
-                Parent
-                <MdExpandMore />
-              </Link>
-              <ul className="p-2 bg-base-200 shadow-xl">
-                <li>
-                  <Link href="/">Submenu 1</Link>
-                </li>
-                <li>
-                  <Link href="/">Submenu 2</Link>
-                </li>
-              </ul>
+            <li>
+              <Link href="/auth">Next Auth</Link>
             </li>
           </ul>
         </div>
