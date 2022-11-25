@@ -5,9 +5,9 @@ export default function TopPage() {
     <article className="prose max-w-full break-words">
       <h1>h1: Welcome to Next.js!</h1>
       <h2>h2: This is a template project.</h2>
-      <h3>h3</h3>
-      <h4>h4</h4>
-      <p>p: Hello!</p>
+      <h3>h3: あいうえお</h3>
+      <h4>h4: かきくけこ</h4>
+      <p>p: Hello! こんにちは！</p>
       <p>It is l{[...new Array(150)].map(() => 'o')}ng sentence.</p>
       <p>
         Link is <Link href="/cat">here</Link>.

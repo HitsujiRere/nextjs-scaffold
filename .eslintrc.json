@@ -23,7 +23,8 @@
       }
     ],
     "@next/next/no-head-element": "off",
-    "import/no-anonymous-default-export": "off"
+    "import/no-anonymous-default-export": "off",
+    "@next/next/no-page-custom-font": "off"
   },
   "settings": {
     "tailwindcss": {

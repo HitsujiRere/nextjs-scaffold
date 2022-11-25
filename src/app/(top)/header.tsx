@@ -11,7 +11,7 @@ export const Header = () => {
           </Link>
         </div>
         <div>
-          <ul className="menu menu-horizontal p-0">
+          <ul className="menu rounded-box menu-horizontal p-1">
             <li>
               <Link href="/cat">Cat</Link>
             </li>
