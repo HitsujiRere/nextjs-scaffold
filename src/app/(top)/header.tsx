@@ -4,9 +4,9 @@ import { MdExpandMore, MdSearch } from 'react-icons/md';
 export const Header = () => {
   return (
     <header className="sticky top-0 bg-base-200">
-      <div className="navbar p-2 justify-between max-w-6xl mx-auto">
+      <div className="navbar mx-auto max-w-6xl justify-between p-2">
         <div>
-          <Link href="/" className="btn btn-ghost normal-case text-xl">
+          <Link href="/" className="btn-ghost btn text-xl normal-case">
             Next.js
           </Link>
         </div>
@@ -21,7 +21,7 @@ export const Header = () => {
                 Form
                 <MdExpandMore />
               </Link>
-              <ul className="p-2 bg-base-200 shadow-xl">
+              <ul className="bg-base-200 p-2 shadow-xl">
                 <li>
                   <Link href="/form">React Hook Form</Link>
                 </li>
@@ -41,13 +41,13 @@ export const Header = () => {
         </div>
         <form className="form-control hidden md:flex">
           <div className="input-group">
-            <button className="btn btn-square">
-              <MdSearch className="w-4 h-4" />
+            <button className="btn-square btn">
+              <MdSearch className="h-4 w-4" />
             </button>
             <input
               type="seach"
               placeholder="Search…"
-              className="input input-bordered bg-base-200"
+              className="input-bordered input bg-base-200"
             />
           </div>
         </form>

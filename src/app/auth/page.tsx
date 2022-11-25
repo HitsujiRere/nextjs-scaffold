@@ -10,7 +10,7 @@ export default function AuthPage() {
   if (status === 'loading') {
     return (
       <div>
-        <h1 className="text-xl font-medium loading">Loading...</h1>
+        <h1 className="loading text-xl font-medium">Loading...</h1>
       </div>
     );
   }

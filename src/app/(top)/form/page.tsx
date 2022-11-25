@@ -25,7 +25,7 @@ export default function TopFormPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="mx-auto max-w-7xl">
       <article className="prose max-w-full break-words">
         <h1>Welcome to Form!</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="form-control w-full gap-y-8">
@@ -37,7 +37,7 @@ export default function TopFormPage() {
               {...register('name', { required: '入力してください' })}
               type="text"
               disabled={isSubmitting}
-              className="input input-bordered w-full"
+              className="input-bordered input w-full"
             />
             {errors.name && (
               <label className="label">
@@ -57,7 +57,7 @@ export default function TopFormPage() {
               })}
               type="number"
               disabled={isSubmitting}
-              className="input input-bordered w-full"
+              className="input-bordered input w-full"
             />
             {errors.age?.message && (
               <label className="label">

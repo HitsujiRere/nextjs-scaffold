@@ -1,6 +1,6 @@
 export default function TopCatPage() {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="mx-auto max-w-7xl">
       <article className="prose max-w-full break-words">
         <h1>Welcome to Cat!</h1>
         <p>Nyan</p>

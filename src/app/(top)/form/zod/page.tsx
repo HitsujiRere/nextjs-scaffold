@@ -31,7 +31,7 @@ export default function TopFormPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="mx-auto max-w-7xl">
       <article className="prose max-w-full break-words">
         <h1>Welcome to Form!</h1>
         <h2>using React-Hook-Form</h2>
@@ -47,7 +47,7 @@ export default function TopFormPage() {
               {...register('name')}
               disabled={isSubmitting}
               type="text"
-              className="input input-bordered w-full"
+              className="input-bordered input w-full"
             />
             {errors.name?.message && (
               <label className="label">
@@ -64,7 +64,7 @@ export default function TopFormPage() {
               {...register('age', { valueAsNumber: true })}
               disabled={isSubmitting}
               type="number"
-              className="input input-bordered w-full"
+              className="input-bordered input w-full"
             />
             {errors.age?.message && (
               <label className="label">

@@ -24,7 +24,7 @@ export default function TopFormPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="mx-auto max-w-7xl">
       <article className="prose max-w-full break-words">
         <h1>Welcome to Form!</h1>
         <h2>Form Example Page</h2>
