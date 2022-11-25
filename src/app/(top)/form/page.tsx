@@ -1,27 +1,21 @@
-import { zodResolver } from '@hookform/resolvers/zod';
+'use client';
+
 import classNames from 'classnames';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { z } from 'zod';
 
-import { Layout } from '@/components/templates/layout';
-
-const schema = z.object({
-  name: z.string().min(1, { message: '入力してください' }),
-  age: z.number({ invalid_type_error: '入力してください' }).nonnegative('0以上を入力してください'),
-});
-
-type Schema = z.infer<typeof schema>;
+type Input = {
+  name: string;
+  age: number;
+};
 
 export default function TopFormPage() {
   const {
     formState: { errors, isSubmitting },
     handleSubmit,
     register,
-  } = useForm({
-    resolver: zodResolver(schema),
-  });
+  } = useForm<Input>();
 
-  const onSubmit: SubmitHandler<Schema> = (values) => {
+  const onSubmit: SubmitHandler<Input> = (values) => {
     return new Promise<void>((resolve) => {
       setTimeout(() => {
         alert(JSON.stringify(values));
@@ -31,27 +25,23 @@ export default function TopFormPage() {
   };
 
   return (
-    <Layout title="Zod - Form">
+    <div className="max-w-7xl mx-auto">
       <article className="prose max-w-full break-words">
         <h1>Welcome to Form!</h1>
-        <h2>using React-Hook-Form</h2>
-        <form
-          onSubmit={handleSubmit((x) => onSubmit(x as Schema))}
-          className="form-control w-full gap-y-8"
-        >
+        <form onSubmit={handleSubmit(onSubmit)} className="form-control w-full gap-y-8">
           <div>
             <label className="label">
               <span className="label-text">Name</span>
             </label>
             <input
-              {...register('name')}
-              disabled={isSubmitting}
+              {...register('name', { required: '入力してください' })}
               type="text"
+              disabled={isSubmitting}
               className="input input-bordered w-full"
             />
-            {errors.name?.message && (
+            {errors.name && (
               <label className="label">
-                <span className="label-text text-error">{errors.name.message.toString()}</span>
+                <span className="label-text text-error">{errors.name.message}</span>
               </label>
             )}
           </div>
@@ -61,14 +51,17 @@ export default function TopFormPage() {
               <span className="label-text">Age</span>
             </label>
             <input
-              {...register('age', { valueAsNumber: true })}
-              disabled={isSubmitting}
+              {...register('age', {
+                min: { message: '0以上を入力してください', value: 0 },
+                required: '入力してください',
+              })}
               type="number"
+              disabled={isSubmitting}
               className="input input-bordered w-full"
             />
             {errors.age?.message && (
               <label className="label">
-                <span className="label-text text-error">{errors.age.message.toString()}</span>
+                <span className="label-text text-error">{errors.age.message}</span>
               </label>
             )}
           </div>
@@ -81,6 +74,6 @@ export default function TopFormPage() {
           </button>
         </form>
       </article>
-    </Layout>
+    </div>
   );
 }
