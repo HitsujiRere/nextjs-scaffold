@@ -1,6 +1,8 @@
-export default function TopCatPage() {
+import { Layout } from '@/components/templates/layout';
+
+export default function CatPage() {
   return (
-    <div className="max-w-7xl mx-auto">
+    <Layout title="Cat">
       <article className="prose max-w-full break-words">
         <h1>Welcome to Cat!</h1>
         <p>Nyan</p>
@@ -10,6 +12,6 @@ export default function TopCatPage() {
           ))}
         </div>
       </article>
-    </div>
+    </Layout>
   );
 }

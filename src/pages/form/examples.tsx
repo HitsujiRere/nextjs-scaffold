@@ -1,7 +1,7 @@
-'use client';
-
 import classNames from 'classnames';
 import { SubmitHandler, useForm } from 'react-hook-form';
+
+import { Layout } from '@/components/templates/layout';
 
 type Input = {
   type: 'cat' | 'dog';
@@ -24,7 +24,7 @@ export default function TopFormPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <Layout title="Example - Form">
       <article className="prose max-w-full break-words">
         <h1>Welcome to Form!</h1>
         <h2>Form Example Page</h2>
@@ -69,6 +69,6 @@ export default function TopFormPage() {
           </button>
         </form>
       </article>
-    </div>
+    </Layout>
   );
 }
